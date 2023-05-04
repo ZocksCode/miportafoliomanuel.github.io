@@ -175,8 +175,10 @@ main {
       }
 
         .fabb{
-          position: absolute;
-          right: 90px;
-          top: 35px;
-          color: white;
+            position: absolute;
+            right: 90px;
+            top: 25px;
+            color: black;
+            width: 145%;
+            font-size: 20px;
         }

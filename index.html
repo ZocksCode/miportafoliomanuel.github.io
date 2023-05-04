@@ -1,0 +1,90 @@
+<!Doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Welcome to me Portafolio! - Manuel Alejandro</title>
+
+  <link rel="stylesheet" href="./estilos/styles.css">
+  <link rel="shortcut icon" href="icono.jpg" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Barra de navegación -->
+  <div class="sidebar">
+    <i class="fa-solid fa-badge-check" style="color: #005eff;position: absolute;"></i>
+    <a href="index.html"><img src="./icono.jpg" alt="Mi Logo" width="251px" title="¡Estás en el Inicio!"></a>
+    <p><i class="fa-solid fa-star" style="color: yellow;"></i> Manuel Alejandro <i class="fa-solid fa-star"
+        style="color: yellow;"></i></p>
+    <br>
+    <ul>
+      <a href="./es/habilidades.html"><i class="fa-solid fa-star"></i> Habilidades</a>
+      <a href="./es/imagenes.html"><i class="fa-solid fa-images"></i> Imagenes</a>
+      <a href="./es/proyectos.html"><i class="fa-solid fa-helmet-safety"></i> Proyectos</a>
+      <a href="./es/precios.html"><i class="fa-solid fa-cart-shopping"></i> Precios</a>
+      <a href="contactame.html"><i class="fa-solid fa-envelope"></i> Contáctame</a>
+    </ul>
+    <p>Todos los Derechos Reservados <strong>Manuel</strong></p>
+  </div>
+
+  <!-- Contenido de la página -->
+  <script> 
+    var nombre = prompt("Por favor, antes de continuar, ingresa tu nombre:");
+  
+    if (nombre == null || nombre == "") {
+  nombre = prompt("Al parecer no haz ingresado tu nombre y necesitamos tener registro de quién eres, por favor coloca tu nombre nuevamente (1/2): ");
+
+  if (nombre == null || nombre == "") {
+    alert("Amig@, te dije que colocaras tu nombre, ahora lamentablemente se te cerrara el acceso a la web hasta que decidas decir quién eres.");
+    window.location.replace("./error.html"); // redirigir a otra página que solicite su nombre nuevamente
+  }
+} 
+  </script>
+  <main>
+    <nav>
+      <ul class="ul">
+        <marquee behavior="" direction="" class="marquee">¡Gracias por visitar mi portafolio
+          <script>document.write(nombre);</script>!
+        </marquee>
+        <i class="fa-brands fa-facebook" title="¡Visitame en Facebook!"></i>
+        <i class="fa-brands fa-instagram" title="¡Visitame en Instagram!"></i>
+      </ul>
+    </nav>
+
+    <div class="contenedor">
+      <img class="img" src="./imagenes/yo.jpg" width="200px">
+      <div class="contenido">
+        <h1>Hola
+          <script>document.write(nombre);</script>,
+        </h1>
+        <p class="subtitulo">Me presento, me llamo <strong>Manuel</strong>, tengo 19 años y soy Diseñador Web (Por los
+          momentos hasta que trascurse la Universidad),
+          y sí, estudio en la Universidad para poder cada día sacar más conocimientos a flote y poder lograr ayudar a la
+          comunidad y a personas como tú
+          a poder lograr lo que quieren y puedan emprender desde su propio sitio web, o proyecto, ¿Quieres saber más?,
+          sigue visitando mi portafolio. </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts de Página -->
+  <script src="https://kit.fontawesome.com/42c7e284bb.js" crossorigin="anonymous"></script>
+  <script>
+    var pageTitle = document.title;
+    var isPageActive = true;
+    document.addEventListener("visibilitychange", function () {
+      if (document.hidden) {
+        // El usuario cambió de pestaña, así que cambiamos el título
+        document.title = "¡Vuelve, te extrañamos ❤!";
+        isPageActive = false;
+      } else {
+        // El usuario volvió a la pestaña, por lo que restauramos el título
+        document.title = pageTitle;
+        isPageActive = true;
+      }
+    });
+  </script>
+</body>
+</html>

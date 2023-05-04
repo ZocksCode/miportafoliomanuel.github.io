@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bruno+Ace+SC&family=Roboto&family=Vina+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #0b003a;
+}
+
+main {
+    margin-left: 270px; /* Ajustar este valor para que se ajuste al ancho de tu barra lateral */
+    margin-right: 20px;
+  }
+
+  /* *Así es como se organiza una barra lateral izquierda* */
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #f2f2f2;
+    border-right: 1px solid #ccc;
+  }
+
+  .sidebar p{
+    top: 20px;
+    position: relative;
+    text-align: center;
+    color: black;
+  }
+
+  /* .sidebar .logo{
+    margin-bottom: 20px;
+  } */
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    display: flex;
+    line-height: 4.8;
+    text-align: center;
+  }
+  
+  li {
+    padding: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  a:hover {
+    background-color: #e2e2e2;
+  }
+
+  .activo{
+    background-color: gray;
+  }
+  
+  /* Parte del Contenido */
+
+  main .ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .marquee{
+    *margin-left: 65px;
+    font-family: cursive;
+    color: white;
+  }
+
+  .fa-facebook{
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .fa-facebook:hover{
+    color: dodgerblue;
+  }
+
+  .fa-instagram{
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .fa-instagram:hover{
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border-radius: 100px;
+  }
+
+  h1{
+    color: white;
+    text-align: center;
+  }
+
+  p{
+    color: white;
+    text-align: center;
+  }
+
+  .a{
+    color: red;
+  }
+
+  .container {
+    *width: 250px;
+    height: 250px;
+  }
+  
+  .terminal_toolbar {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    padding: 0 8px;
+    box-sizing: border-box;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #212121;
+    justify-content: space-between;
+  }
+  
+  .butt {
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-right: 5px;
+    font-size: 8px;
+    height: 12px;
+    width: 12px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 100%;
+    background: linear-gradient(#7d7871 0%, #595953 100%);
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 1px 0px #41403A, 0px 1px 1px 0px #474642;
+  }
+  
+  .btn-color {
+    background: #ee411a;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
+  
+  .butt--exit {
+    background: linear-gradient(#f37458 0%, #de4c12 100%);
+  }
+  
+  .add_tab {
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0 6px;
+    border-radius: 4px 4px 0 0;
+    border-bottom: none;
+    cursor: pointer;
+  }
+  
+  .user {
+    color: #d5d0ce;
+    margin-left: 6px;
+    font-size: 14px;
+    line-height: 15px;
+  }
+  
+  .terminal_body {
+    background: rgba(0, 0, 0, 0.6);
+    height: calc(100% - 30px);
+    padding-top: 2px;
+    margin-top: -1px;
+    font-size: 12px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .terminal_promt {
+    display: flex;
+  }
+  
+  .terminal_promt span {
+    margin-left: 4px;
+  }
+  
+  .terminal_user {
+    color: #1eff8e;
+  }
+  
+  .terminal_location {
+    color: #4878c0;
+  }
+  
+  .terminal_bling {
+    color: #dddddd;
+    width: 100%;
+  }
+  
+  .terminal_descripcion{
+    color: #1eff8e;
+    top: 80px;
+    right: 250px;
+    width: 200pc;
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+  }
+
+  .terminal_cursor {
+    display: block;
+    height: 14px;
+    width: 5px;
+    margin-left: 10px;
+    position: relative;
+    top: 96px;
+    right: 540px;
+    animation: curbl 1200ms linear infinite;
+  }
+  
+  @keyframes curbl {
+  
+    0% {
+      background: #ffffff;
+    }
+  
+    49% {
+      background: #ffffff;
+    }
+  
+    60% {
+      background: transparent;
+    }
+  
+    99% {
+      background: transparent;
+    }
+  
+    100% {
+      background: #ffffff;
+    }
+  }
+
+  .cartas{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .card {
+    width: 252px;
+    height: 265px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 30px #bebebe, -5px -5px 30px #00308c;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .img {
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-image: url(https://th.bing.com/th/id/OIP.yjNy1uk2e-1Jz_ur0BQCOgHaEd?pid=ImgDet&rs=1);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: top;
+    justify-content: right;
+  }
+
+  .img2 {
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-image: url(https://th.bing.com/th/id/R.94c27ecfce39d25f21caba3904675004?rik=AYFPtO9hJ8eUUQ&pid=ImgRaw&r=0);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: top;
+    justify-content: right;
+  }
+
+  .img3 {
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-image: url(https://th.bing.com/th/id/R.a627945fc444b7f97a8a965108205f37?rik=sJ0atll1T8vM9A&riu=http%3a%2f%2fcarybus.proconsultingteam.com%2fwp-content%2fuploads%2f2017%2f10%2fconstruccion.jpg&ehk=oDAliREuK8jRPYToEnU5cb5a4vEutF%2f7R8V8zkagtU0%3d&risl=&pid=ImgRaw&r=0);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: top;
+    justify-content: right;
+  }
+
+  .img4 {
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-image: url(https://hackhit.files.wordpress.com/2019/08/dixmax-captura-1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: top;
+    justify-content: right;
+  }
+  
+  .save {
+    transition: 0.2s ease-in-out;
+    border-radius: 10px;
+    margin: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .text {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+  }
+  
+  .save .svg {
+    transition: 0.2s ease-in-out;
+    width: 15px;
+    height: 15px;
+  }
+  
+  .icon-box {
+    margin-top: 15px;
+    width: 70%;
+    padding: 10px;
+    background-color: #e3fff9;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  
+  .icon-box svg {
+    width: 17px;
+  }
+  
+  .text .h3 {
+    font-family: 'Lucida Sans' sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    text-decoration: underline;
+  }
+  
+  .text .p {
+    font-family: 'Lucida Sans' sans-serif;
+    color: black;
+    font-size: 13px;
+  }
+  
+  .icon-box .span {
+    margin-left: 10px;
+    font-family: 'Lucida Sans' sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #9198e5;
+  }
+  
+  .card:hover {
+    cursor: pointer;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .save:hover {
+    transform: scale(1.1) rotate(10deg);
+  }
+  
+  .save:hover .svg {
+    fill: #ced8de;
+  }

@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bruno+Ace+SC&family=Roboto&family=Vina+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #0b003a;
+}
+
+main {
+    margin-left: 270px; /* Ajustar este valor para que se ajuste al ancho de tu barra lateral */
+    margin-right: 20px;
+  }
+
+/* *Así es como se organiza una barra lateral izquierda* */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #f2f2f2;
+    border-right: 1px solid #ccc;
+  }
+
+  .sidebar p{
+    top: 20px;
+    position: relative;
+    text-align: center;
+  }
+
+  /* .sidebar .logo{
+    margin-bottom: 20px;
+  } */
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    display: flex;
+    line-height: 4.8;
+    text-align: center;
+  }
+  
+  li {
+    padding: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  a:hover {
+    background-color: #e2e2e2;
+  }
+
+  .activo{
+    background-color: gray;
+  }
+
+    /* Parte del Contenido */
+
+    main .ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+    
+      .marquee{
+        *margin-left: 65px;
+        font-family: cursive;
+        color: white;
+      }
+    
+      .fa-facebook{
+        font-size: 30px;
+        margin-left: 20px;
+        margin-right: 10px;
+        cursor: pointer;
+        color: white;
+      }
+    
+      .fa-facebook:hover{
+        color: dodgerblue;
+      }
+    
+      .fa-instagram{
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+      }
+    
+      .fa-instagram:hover{
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+        border-radius: 100px;
+      }
+
+      .sub{
+        color: white;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      /* FORMULARIO */
+
+      h1{
+        text-align: center;
+        margin-bottom: 10px;
+        color: white;
+      }
+
+      .form-row{
+        display: flex;
+        flex-direction: initial;
+      }
+
+      .form-control1{
+        padding: 20px;
+        width: 92.5%;
+      }
+
+      .form-control2{
+        padding: 20px;
+        width: 93.1%;
+        margin-bottom: 4px;
+      }
+
+      .form-control3{
+        padding: 20px;
+        width: 96.63%;
+      }
+
+      .btn{
+        padding: 15px;
+        width: 100%;
+        margin-bottom: 10px;
+        background-color: #333;
+        color: white;
+        cursor: pointer;
+      }
+
+      .col{
+        width: 625px;
+      }
+
+      /* Estilos para el botón */
+      .fab {
+        right: 20px;
+        top: 650px;
+        position: absolute;
+        z-index: 10;
+        background-color: transparent;
+        animation: jump 0.5s infinite alternate; /* Añade la animación */
+        }
+
+        .fab:hover{
+          background-color: transparent;
+        }
+
+        /* Estilos para la animación */
+        @keyframes jump {
+          from {
+              transform: translateY(0);
+          }
+          to {
+              transform: translateY(-10px);
+          }
+      }
+
+        .fabb{
+          position: absolute;
+          right: 90px;
+          top: 35px;
+          color: white;
+        }

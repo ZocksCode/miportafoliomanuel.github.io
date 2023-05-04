@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bruno+Ace+SC&family=Roboto&family=Vina+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #0b003a;
+}
+
+main {
+    margin-left: 270px;
+    /* Ajustar este valor para que se ajuste al ancho de tu barra lateral */
+    margin-right: 20px;
+}
+
+/* *Así es como se organiza una barra lateral izquierda* */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #f2f2f2;
+    border-right: 1px solid #ccc;
+}
+
+.sidebar p {
+    top: 20px;
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+/* .sidebar .logo{
+    margin-bottom: 20px;
+  } */
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    display: flex;
+    line-height: 4.8;
+    text-align: center;
+}
+
+li {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    background-color: #e2e2e2;
+}
+
+.activo {
+    background-color: gray;
+}
+
+/* Parte del Contenido */
+
+main .ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.marquee {
+    *margin-left: 65px;
+    font-family: cursive;
+    color: white;
+}
+
+.fa-facebook {
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.fa-facebook:hover {
+    color: dodgerblue;
+}
+
+.fa-instagram {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.fa-instagram:hover {
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    border-radius: 100px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+.sub {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+p{
+    color: white;
+    text-align: center;
+}
+
+/* Estilos para el botón */
+.fab {
+    right: 20px;
+    top: 650px;
+    position: fixed;
+    z-index: 10;
+    background-color: transparent;
+    animation: jump 0.5s infinite alternate;
+    /* Añade la animación */
+}
+
+.fab:hover {
+    background-color: transparent;
+}
+
+/* Estilos para la animación */
+@keyframes jump {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+.fabb {
+    position: absolute;
+    right: 90px;
+    top: 25px;
+    color: black;
+    width: 145%;
+    font-size: 20px;
+}
+
+.pricing-table {
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-option {
+    width: 33%;
+    height: 1%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.pricing-option:hover {
+    box-shadow: 0px 12px 20px rgba(255, 255, 255, 0.77);
+}
+
+.pricing-header {
+    background-color: dodgerblue;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.pricing-header h3 {
+    color: #555;
+}
+
+.pricing-body ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    text-align: center;
+    *margin-bottom: 20px;
+}
+
+.pricing-body ul li {
+    margin-bottom: 5px;
+}
+
+.pricing-body .price {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #0070f3;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #00509d
+}
+
+.btn.btn-primary {
+    background-color: #0070f3;
+}
+
+.btn:hover.btn-primary {
+    background-color: #00509d;
+}
+
+.imagenes{
+    display: flex;
+    justify-content: center;
+}
+
+.p{
+    color: white;
+    text-align: center;
+}

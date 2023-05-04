@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes Previas - Manuel</title>
+    <!-- Aquí van los enlaces de tus hojas de estilo CSS -->
+    <link rel="stylesheet" href="../estilos/estilos internos/imagenes.css">
+    <link rel="shortcut icon" href="../icono.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <div class="sidebar">
+        <i class="fa-solid fa-badge-check" style="color: #005eff;position: absolute;"></i>
+        <a href="../index.html"><img src="../icono.jpg" alt="Mi Logo" width="251px" title="Regresa al Inicio"></a>
+        <p><i class="fa-solid fa-star" style="color: yellow;"></i> Manuel Alejandro <i class="fa-solid fa-star"
+                style="color: yellow;"></i></p>
+        <br>
+        <ul>
+            <a href="../es/habilidades.html"><i class="fa-solid fa-star"></i> Habilidades</a>
+            <a class="activo" href="../es/imagenes.html" title="¡Estás Aquí!"><i class="fa-solid fa-images"></i> Imagenes</a>
+            <a href="../es/proyectos.html"><i class="fa-solid fa-helmet-safety"></i> Proyectos</a>
+            <a href="../es/precios.html"><i class="fa-solid fa-cart-shopping"></i> Precios</a>
+            <a href="../contactame.html"><i class="fa-solid fa-envelope"></i> Contáctame</a>
+        </ul>
+        <p>Todos los Derechos Reservados <strong>Manuel</strong></p>
+    </div>
+
+    <!-- Contenido de la página -->
+    <main>
+        <nav>
+            <ul class="ul">
+                <marquee behavior="" direction="" class="marquee">¡Gracias por visitar mi portafolio
+                    <script>document.write(nombre);</script>!
+                </marquee>
+                <i class="fa-brands fa-facebook" title="¡Visitame en Facebook!"></i>
+                <i class="fa-brands fa-instagram" title="¡Visitame en Instagram!"></i>
+            </ul>
+        </nav>
+
+        <h1>Imagenes de Creaciones:</h1>
+        <br>
+        <p>Ahora verás más o menos que he realizado, estos han contado con diferentes formas de hacerlo, tiempo, sudor y
+            paciencia ya que todo no
+            es perfecto, sin embargo, hoy en día he estado realizando diversos proyectos para diferentes plataformas
+            entre ellos:
+            Trading, Streaming, Publicidad y Informativas (Hasta los momentos), platillas de Mantenimiento de Web etc, sin embargo diariamente me salen tareas
+            emprendedoras para realizarlas a cada momento.
+        </p>
+        <br><br>
+        <div class="imagenes">
+            <div class="card">
+                <div class="card-image"><img class="zoom" src="../imagenes/frspot.png" width="100%" height="100%"></div>
+                <div class="category"> Trading "FRSPOT" </div>
+                <div class="heading"> Página web dedicada al Trading
+                    <div class="author"> By <span class="name">Manuel</span> Recientemente</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image"><img class="zoom" src="../imagenes/instant.png" width="100%" height="100%"></div>
+                <div class="category"> Publicidad </div>
+                <div class="heading"> Una página creada para la Publicidad
+                    <div class="author"> By <span class="name">Manuel</span> Recientemente</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image"><img class="zoom" src="../imagenes/portafolio.png" width="100%" height="100%"></div>
+                <div class="category"> Portafolios </div>
+                <div class="heading"> También he realizado dichos portafolios.
+                    <div class="author"> By <span class="name">Manuel</span> Recientemente</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image"><img class="zoom" src="https://th.bing.com/th/id/R.1cd555913806ee67aab7a295b1cbe9e0?rik=liOoz2Qru1ldcA&pid=ImgRaw&r=0" width="100%" height="100%"></div>
+                <div class="category"> Streaming </div>
+                <div class="heading"> Página web creada para Streaming
+                    <div class="author"> By <span class="name">Manuel</span> Recientemente</div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <p class="p"><strong>*TODOS LOS PROYECTOS QUE REALICE CON EL TIEMPO LOS ESTARE SUBIENDO, ASÍ QUE SI QUIEREN ESTAR AL TANTO DE TODO
+            INGRESEN SU CORREO ELECTRONICO EN <a class="a" href="../contactame.html">CONTÁCTAME</a> Y SERAS EL PRIMERO EN SABERLO!*
+        </strong></p>
+    </main>
+
+    <!-- Scripts de Página -->
+    <script src="https://kit.fontawesome.com/42c7e284bb.js" crossorigin="anonymous"></script>
+    <script>
+        var pageTitle = document.title;
+        var isPageActive = true;
+        document.addEventListener("visibilitychange", function () {
+            if (document.hidden) {
+                // El usuario cambió de pestaña, así que cambiamos el título
+                document.title = "¡Vuelve, te extrañamos ❤!";
+                isPageActive = false;
+            } else {
+                // El usuario volvió a la pestaña, por lo que restauramos el título
+                document.title = pageTitle;
+                isPageActive = true;
+            }
+        });
+    </script>
+</body>
+
+</html>

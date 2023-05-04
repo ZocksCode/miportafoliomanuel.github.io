@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Habilidades - Manuel</title>
+    <!-- Aquí van los enlaces de tus hojas de estilo CSS -->
+    <link rel="stylesheet" href="../estilos/estilos internos/habilidades.css">
+    <link rel="shortcut icon" href="../icono.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <div class="sidebar">
+        <i class="fa-solid fa-badge-check" style="color: #005eff;position: absolute;"></i>
+        <a href="../index.html"><img src="../icono.jpg" alt="Mi Logo" width="251px" title="Regresa al Inicio"></a>
+        <p><i class="fa-solid fa-star" style="color: yellow;"></i> Manuel Alejandro <i class="fa-solid fa-star"
+                style="color: yellow;"></i></p>
+        <br>
+        <ul>
+            <a class="activo" href="../es/habilidades.html" title="¡Estás Aquí!"><i class="fa-solid fa-star"></i> Habilidades</a>
+            <a href="../es/imagenes.html"><i class="fa-solid fa-images"></i> Imagenes</a>
+            <a href="../es/proyectos.html"><i class="fa-solid fa-helmet-safety"></i> Proyectos</a>
+            <a href="../es/precios.html"><i class="fa-solid fa-cart-shopping"></i> Precios</a>
+            <a href="../contactame.html"><i class="fa-solid fa-envelope"></i> Contáctame</a>
+        </ul>
+        <p>Todos los Derechos Reservados <strong>Manuel</strong></p>
+    </div>
+
+    <!-- Contenido de la página -->
+    <main>
+        <nav>
+            <ul class="ul">
+                <marquee behavior="" direction="" class="marquee">¡Gracias por visitar mi portafolio!
+                </marquee>
+                <i class="fa-brands fa-facebook" title="¡Visitame en Facebook!"></i>
+                <i class="fa-brands fa-instagram" title="¡Visitame en Instagram!"></i>
+            </ul>
+        </nav>
+
+        <h1>Aquí te dejo algunas de mis habilidades como programador:</h1>
+        <br>
+        <p class="sub">
+            Se realizar diferentes cosas dependiendo de lo que tu me pidas, sí requieres de alguno de mis servicios por
+            favor dirigete
+            a <a class="a" href="../contactame.html"><strong>Contáctame</strong></a> y enviame un correo o un WhatsAPP
+            sí deseas que le implemente a mi portafolio una sesión de <strong>Precios y
+                Productos</strong> a ofrecer, pero mientras lo estás pensando, por que no me escribes también para
+            poderte realizar algún proyecto en mente. -> Sí quieres saber más ácerca de mis proyectos ve a
+            <a class="a" href="./proyectos.html"><strong>Proyectos</strong></a> y observa la calidad que te ofrezco.
+        </p>
+        <br>
+
+        <div class="barra">
+            <div class="porcentaje" style="width: 100%;">
+                <strong>HTML5: 100%</strong>
+            </div>
+        </div>
+        <br>
+        <div class="barra">
+            <div class="porcentaje" style="width: 80%;">
+                <strong>CSS3: 85%</strong>
+            </div>
+        </div>
+        <br>
+        <div class="barra">
+            <div class="porcentaje" style="width: 50%;">
+                <strong>JavaScripts: 50% (Me defiendo bien)</strong>
+            </div>
+        </div>
+        <br>
+        <div class="barra">
+            <div class="porcentaje" style="width: 50%;">
+                <strong>PHP: 50% (Me defiendo bien)</strong>
+            </div>
+        </div>
+        <br>
+
+        <hr>
+        <br>
+        <h1>Aparte de las habilidades:</h1>
+        <br>
+        <p class="sub">  Normalmente acostumbro (Depende del cliente) a obsequiarle alguna cosita o x material para su web, normalmente todo esto lo
+            doy por culminado en <a class="a" href="../es/precios.html">Precios</a> ya que podran ver las diferentes listas en donde sale bien ordenado 
+            y concretado el costo del producto y lo que trae, siempre cuando no puedo lograr algo (Por ejemplo) no busco ayuda con nadie, trabajo solo y
+            si de casualidad algo se escapa ya eso proviene directamente de otro usuario, yo siempre resuelvo lo que se me hace dificil ya que 
+            son metas que uno debe cumplir para poder superarse, metas y metas de eso se trata la vida y la responsabilidad, lás páginas siempre trato de
+            hacerlas lo mejor posible con cariño y dedicación.
+        </p>
+    </main>
+
+    <!-- Scripts de Página -->
+    <script src="https://kit.fontawesome.com/42c7e284bb.js" crossorigin="anonymous"></script>
+    <script>
+        var pageTitle = document.title;
+        var isPageActive = true;
+        document.addEventListener("visibilitychange", function () {
+            if (document.hidden) {
+                // El usuario cambió de pestaña, así que cambiamos el título
+                document.title = "¡Vuelve, te extrañamos ❤!";
+                isPageActive = false;
+            } else {
+                // El usuario volvió a la pestaña, por lo que restauramos el título
+                document.title = pageTitle;
+                isPageActive = true;
+            }
+        });
+    </script>
+</body>
+
+</html>
